@@ -22,4 +22,8 @@ public class Fibonacci {
         }
         return last;
     }
+
+    public static long fibo4(long n) {
+        return n;
+    }
 }
