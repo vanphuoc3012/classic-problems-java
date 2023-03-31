@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Fibonacci {
-    static Map<Long, Long> fiboMap = new HashMap<>(Map.of(0l,0l,1l,1l));
+    static Map<Long, Long> fiboMap = new HashMap<>(Map.of(0L, 0L, 1L, 1L));
     public static long fibo1(long n) {
         if(n < 2) return n;
         return fibo1(n - 1) + fibo1(n - 2);
@@ -23,7 +23,5 @@ public class Fibonacci {
         return last;
     }
 
-    public static long fibo4(long n) {
-        return n;
-    }
+
 }
