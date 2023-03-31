@@ -18,15 +18,11 @@ public class Main {
         System.out.println("result: " + Fibonacci.fibo2(i));
         end = System.currentTimeMillis();
         System.out.println("fibo2 take: " + (end - start) + " ms");
-        System.out.println(start);
-        System.out.println(end);
 
         start = System.currentTimeMillis();
         System.out.println("result: " + Fibonacci.fibo3(i));
         end = System.currentTimeMillis();
         System.out.println("fibo3 take: " + (end - start) + " ms");
-        System.out.println(start);
-        System.out.println(end);
 
         System.out.println("*** Trivial compression ***");
         String gene = RandomStringUtils.random(Integer.MAX_VALUE / 3, 'A', 'C', 'G', 'T');
@@ -43,8 +39,14 @@ public class Main {
         end = System.currentTimeMillis();
         System.out.println("*** Decompress completed ***");
         System.out.println("Decompress time: " + (end - start) + "ms");
-
         System.out.println(gene.equals(decompress));
+
+        System.out.println("*** Start calculating Pi ***");
+        start = System.currentTimeMillis();
+        System.out.println("Pi = "+Pi.calculatePi(Integer.MAX_VALUE));
+        end = System.currentTimeMillis();
+        System.out.println("*** Calculating Pi completed ***");
+        System.out.println("Calculation time: " + (end - start) + "ms");
     }
 
 
